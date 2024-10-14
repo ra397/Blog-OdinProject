@@ -18,6 +18,14 @@ This project is a [tutorial](https://guides.rubyonrails.org/getting_started.html
             5. GET the page that lets you edit an existing post (aka view the “edit” post page)
             6. PUT the data you just filled out to edit the post back to the server so it can actually perform the update (aka “update” the post)
             7. DELETE one specific post by sending a delete request to the server (aka “destroy” the post)
+
+- Controllers
+    - Routes map to a controller
+    - Controller gets proper data from model and holds it in instance variables
+    - These instance variables are accessible by the view for the controller and displayed to user that way
+    - `params` hash
+
+
 - Models
     - Models hold the data for the app. Models can interact with a database using *Active Record*.
     - To generate a new model: 
