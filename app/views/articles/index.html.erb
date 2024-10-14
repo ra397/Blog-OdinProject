@@ -3,8 +3,10 @@
 <ul>
   <% @articles.each do |article| %>
     <li>
-      <%= article.title %>
-      <%= article.body %>
+    <!-- Wrapped in a link to /articles/:id -->
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
     </li>
   <% end %>
 </ul>
