@@ -4,9 +4,7 @@
   <% @articles.each do |article| %>
     <li>
     <!-- Wrapped in a link to /articles/:id -->
-      <a href="/articles/<%= article.id %>">
-        <%= article.title %>
-      </a>
+      <%= link_to article.title, article %>
     </li>
   <% end %>
 </ul>
